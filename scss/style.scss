@@ -18,7 +18,8 @@
 header.row,
 .container.row,
 .row.full-width {
-	background-color: rgba(255,255,255,0.9);
+	//background-color: rgba(255,255,255,0.9);
+    @include opacity(90);
 }
 
 // adjusting header
@@ -74,9 +75,9 @@ ol.commentlist {
 			}
 }
 
-// add some extra margin to ul
-ul {
-	margin-#{$default-float}: $list-side-margin;
+// add some extra margin to ul, ol
+ul, ol {
+	margin-#{$default-float}: $list-side-margin*2;
 }
 
 // add some margin for images in post

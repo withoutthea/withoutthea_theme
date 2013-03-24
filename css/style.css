@@ -379,6 +379,44 @@ table {
   margin-bottom: 1.5em;
 }
 
+.wota-bottom-border {
+  border-bottom: 1px solid #6f6f6f;
+}
+
+.wota-border-left {
+  border-left: 1px solid #6f6f6f;
+}
+
+.wota-pad-the-top {
+  padding-top: 1em;
+}
+
+.opacity-90 {
+  opacity: .90;
+  filter: alpha(opacity=90);
+  -ms-filter: "alpha(opacity=$value)";
+  -khtml-opacity: .90;
+  -moz-opacity: .90;
+}
+
+.opacity-80 {
+  opacity: .80;
+  filter: alpha(opacity=80);
+  -ms-filter: "alpha(opacity=$value)";
+  -khtml-opacity: .80;
+  -moz-opacity: .80;
+}
+
+.footer {
+  background-color: #111111;
+  margin-top: 1.5em;
+  padding-top: 1.5em;
+  color: white;
+}
+.footer h1, .footer h2, .footer h3, .footer h4, .footer ol.commentlist cite.fn, ol.commentlist .footer cite.fn, .footer ol.commentlist cite.fn, .footer h5, .footer h6 {
+  color: white;
+}
+
 *,
 *:before,
 *:after {
@@ -5007,7 +5045,11 @@ table tfoot tr td {
 header.row,
 .container.row,
 .row.full-width {
-  background-color: rgba(255, 255, 255, 0.9);
+  opacity: .90;
+  filter: alpha(opacity=90);
+  -ms-filter: "alpha(opacity=$value)";
+  -khtml-opacity: .90;
+  -moz-opacity: .90;
 }
 
 h4.subheader, ol.commentlist cite.subheader.fn {
@@ -5114,8 +5156,8 @@ ol.commentlist a.comment-reply-link {
   bottom: 1em;
 }
 
-ul {
-  margin-left: 1.25em;
+ul, ol {
+  margin-left: 2.5em;
 }
 
 .container img {

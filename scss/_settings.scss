@@ -4,5 +4,32 @@
 // doc page. We tried to name them to where they'd make sense just by reading them.
 // Go to http://foundation.zurb.com/docs/ to find what you need.
 
+// custom mixins
+@mixin opacity($value) {
+  opacity: #{"." + $value};
+  filter: alpha(opacity=$value);
+  -ms-filter: "alpha(opacity=$value)";
+  -khtml-opacity: #{"." + $value};
+  -moz-opacity: #{"." + $value};
+}
+
+
 .top-bar ul { margin-left: 0; }
 .bottom-margin-1-5em { margin-bottom: 1.5em; }
+.wota-bottom-border { border-bottom: 1px solid #6f6f6f; }
+.wota-border-left { border-left: 1px solid #6f6f6f; }
+.wota-pad-the-top { padding-top: 1em; }
+.opacity-90 { @include opacity(90); }
+.opacity-80 { @include opacity(80); }
+
+// footer
+.footer {
+    background-color: #111111;
+    margin-top: 1.5em;
+    padding-top: 1.5em;
+    color: white;
+    
+    h1, h2, h3, h4, ol.commentlist cite.fn, h5, h6 {
+        color: white;
+    }
+}
