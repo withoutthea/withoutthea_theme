@@ -39,8 +39,6 @@
 
 <body <?php body_class(); ?>>
 
-
-
 <header class="row" role="banner">
 	<div class="small-12 large-6 columns">
 		<!--<h1><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>"><?php bloginfo('name'); ?></a></h1>
