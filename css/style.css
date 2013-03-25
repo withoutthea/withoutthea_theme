@@ -407,6 +407,22 @@ table {
   -moz-opacity: .80;
 }
 
+.content-area {
+  border-right: 1px solid #afafaf;
+}
+
+blockquote {
+  border-left-color: #6f6f6f;
+}
+
+.widget-area {
+  border-top: 1px solid #bcbcbc;
+}
+
+.sidebar-area .widget:first-child > .widget-area {
+  border: none;
+}
+
 .footer {
   background-color: #111111;
   margin-top: 1.5em;
