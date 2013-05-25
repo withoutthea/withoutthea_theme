@@ -33,6 +33,8 @@ require_once('lib/foundation.php'); // load Foundation specific functions like t
 */
 require_once('lib/presstrends.php'); // load PressTrends to track the usage of Reverie across the web, comment this line if you don't want to be tracked
 
+require_once('lib/wota_theme_customization.php');
+
 /**********************
 Add theme supports
 **********************/
@@ -57,7 +59,7 @@ function reverie_theme_support() {
 		'utility' => __('Utility Navigation', 'reverie')
 	));
 	
-	// Add custom background support
+	/* Add custom background support
 	add_theme_support( 'custom-background',
 	    array(
 	    'default-image' => '',  // background image default
@@ -66,7 +68,7 @@ function reverie_theme_support() {
 	    'admin-head-callback' => '',
 	    'admin-preview-callback' => ''
 	    )
-	);
+	);*/
 }
 add_action('after_setup_theme', 'reverie_theme_support'); /* end Reverie theme support */
 
